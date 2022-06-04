@@ -1,0 +1,293 @@
+body{
+    background-color: rgb(255, 0, 0);
+    background-image: url("https://klike.net/uploads/posts/2019-02/1551338907_3.jpg");
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    background-color: rgb(255, 217, 0);
+    color: rgb(37, 37, 37);
+padding: 0ch;
+margin: 0%;
+}
+
+div{
+  
+    text-align: center;
+}
+
+#container{
+    background-color: aliceblue;
+width: auto;
+background-color: darkgrey;
+width: auto;
+display: flex;
+flex-direction: column;
+min-height: 100vh
+
+}
+
+
+.menu{
+    
+ height: 50px;
+}
+
+.content{
+     background-color: aqua;
+     float:left;
+     width:65%;
+     height:auto;
+
+ }
+.sidebar{
+    background-color: black;
+    float:right ;
+    width: 35%;
+    height:auto;
+}
+.clear{
+    clear: both;
+
+}
+
+
+.footer{
+  background-color: darkturquoise;
+  margin-top: auto;
+  
+}
+
+ ul,li{
+     margin: 0;
+     padding: 0;
+ }
+ ul{
+     list-style: none;
+     width: 100%;   
+ }
+ li{
+     float: left;
+     width: auto;
+     
+ }
+a{
+    background-color: blue;
+    color: aliceblue;
+    display: block;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    
+
+
+}
+li:hover a{
+    background-color: black;
+}
+  
+.header{
+    height: 200px;
+ background-color: brown;
+ display: flex;
+ justify-content: center;
+
+}
+
+.menu{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+.menu ul{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    list-style: none;
+}
+
+
+.menu > ul::after{
+    display: block;
+    width: 100%;
+    height: 0px;
+    clear: both;
+    content: "";
+}
+
+  .menu ul li{
+      position: relative;
+      display: block;
+      float: left;
+      width:auto;
+      height: auto;
+  }
+
+  .menu ul li a{
+      display: block;
+      padding: 10px;
+      font-size: 14px;
+      line-height: 1.3em;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      height: 38px;
+      box-sizing: border-box;
+      background-color: brown;
+      color: aliceblue;
+}
+
+
+
+.menu ul li ul{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    width: auto;
+}
+.menu ul li:hover >ul{
+
+
+    display: block;
+}
+
+
+
+.menu ul li ul li{
+    float: none;
+    width: 100%;
+}
+
+
+
+.menu ul li ul li a{
+    display: block;
+    height: 38px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: brown;
+    color: aliceblue;
+    border: aliceblue;
+}
+
+.menu ul li ul li :first-child a{
+    border-top: 0px;
+}
+
+
+.menu ul li:hover a{
+    background-color: brown;
+    color: aliceblue;
+    border: aliceblue;
+}
+   
+
+.ll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.niz{
+    
+ display: flex;
+
+}
+
+.bar{
+    height: 8px;
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    opacity: .5;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.bar :hover{
+    opacity: .8;
+    transform: scale(1.1);
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+
+}
+.slide{
+    width: 25%;
+    transition:all .6s ease;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left:0 ;
+}
+#r2:checked ~ .s1{
+    margin-left:-25% ;
+}
+#r3:checked ~ .s1{
+    margin-left:-50% ;
+}
+#r4:checked ~ .s1{
+    margin-left:-75% ;
+}
+.slider{
+    width: 1100px;
+    height: 600px;
+    overflow: hidden;
+    border: solid 10px #ffffff;
+}
+
+
+
+.main{
+    display: flex;
+}
+.content{
+    background-color: aqua;
+    flex: 70%;
+    height: auto;
+}
+
+.post{
+    display: flex;
+    height: 300px;
+}
+.post img{
+    flex: 30%;
+    height: 280px;
+    width: 100px;
+    margin: 10px;
+}
+
+.post text{
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    margin: 10px;
+
+}
+
+.sidebar{
+    background-color: rgb(32, 32, 32);
+    flex: 30%;
+    height: auto;
+    color: rgb(0, 255, 38);
+}
