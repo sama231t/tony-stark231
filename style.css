@@ -2,6 +2,12 @@ body{
     background-color: rgb(255, 0, 0);
     background-image: url("https://klike.net/uploads/posts/2019-02/1551338907_3.jpg");
     font-family: 'Oswald', sans-serif;
+ disply: flex;
+ flex-direction: column;
+ justify-content: center;
+  align-items: center; 
+      
+    
 }
 p{
     background-color: rgb(255, 217, 0);
